@@ -238,18 +238,18 @@ clear
 wget https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #!/bin/bash
 cd
-wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/FanoraSsh/v/main/sshws/dropbear-ws.py
-wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/FanoraSsh/v/main/sshws/ws-stunnel
+wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/FanoraSsh/Autossh/main/sshws/dropbear-ws.py
+wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/FanoraSsh/Autossh/main/sshws/ws-stunnel
 #izin permision
 #chmod +x /usr/local/bin/ws-openssh
 chmod +x /usr/local/bin/ws-dropbear
 chmod +x /usr/local/bin/ws-stunnel
 
 #System Dropbear Websocket-SSH Python
-wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/FanoraSsh/v/main/sshws/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
+wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/FanoraSsh/Autossh/main/sshws/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
 
 #System SSL/TLS Websocket-SSH Python
-wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/FanoraSsh/v/main/sshws/ws-stunnel.service && chmod +x /etc/systemd/system/ws-stunnel.service
+wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/FanoraSsh/Autossh/main/sshws/ws-stunnel.service && chmod +x /etc/systemd/system/ws-stunnel.service
 systemctl daemon-reload
 systemctl enable ws-dropbear.service
 systemctl start ws-dropbear.service
