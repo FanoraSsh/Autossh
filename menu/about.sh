@@ -81,8 +81,8 @@ echo "   - Auto-Reboot             : [ON]"  | tee -a log-install.txt
 echo "   - IPv6                    : [OFF]"  | tee -a log-install.txt
 echo "   - Auto Delete Expired Account" | tee -a log-install.txt
 echo "   - Full Orders For Various Services" | tee -a log-install.txt
-echo "   - Whatsapp: 083120684925" | tee -a log-install.txt
-echo "   - Telegram: @Rerechan02" | tee -a log-install.txt
+echo "   - Whatsapp: 087835373265" | tee -a log-install.txt
+echo "   - Telegram: @FanoraVpnTunnel" | tee -a log-install.txt
 echo "   - White Label" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Detail Order Script"  | tee -a log-install.txt
@@ -93,7 +93,7 @@ echo "   - Domain VPS     : $(cat /etc/xray/domain)"
 echo "   - Script Version : 1.2"
 echo "   - Script Expired : $tanggal"
 echo "    -------------------------" | tee -a log-install.txt
-echo -e "\e[1;32m══════════════════ Autoscript By Rerechan02 ══════════════════\e[0m" | tee -a log-install.txt
+echo -e "\e[1;32m══════════════════ Autoscript By FanoraVpnTunnel ══════════════════\e[0m" | tee -a log-install.txt
 echo ""
 read -n 1 -s -r -p "Press any key to back on menu"
 menu
