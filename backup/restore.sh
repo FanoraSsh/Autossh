@@ -29,7 +29,7 @@ NC='\e[0m'
 clear
 cd
 #link izin ip vps
-url_izin='https://raw.githubusercontent.com/Rerechan02/iziznscript/main/ip'
+url_izin='https://raw.githubusercontent.com/FanoraSsh/iziznscript/main/ip'
 
 # Mendapatkan IP VPS saat ini
 ip_vps=$(curl -s ifconfig.me)
@@ -64,8 +64,8 @@ else
   exit 0
 fi
 MYIP=$(curl -sS ipv4.icanhazip.com)
-NameUser=$(curl -sS https://raw.githubusercontent.com/Rerechan02/izinvps/main/ip | grep $MYIP | awk '{print $2}')
-cekdata=$(curl -sS https://raw.githubusercontent.com/Rerechan02/backup/main/$NameUser/$NameUser.zip | grep 404 | awk '{print $1}' | cut -d: -f1)
+NameUser=$(curl -sS https://raw.githubusercontent.com/FanoraSsh/izinvps/main/ip | grep $MYIP | awk '{print $2}')
+cekdata=$(curl -sS https://raw.githubusercontent.com/FanoraSsh/backup/main/$NameUser/$NameUser.zip | grep 404 | awk '{print $1}' | cut -d: -f1)
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC} ${COLBG1}             • RESTOR PANEL MENU •             ${NC} $COLOR1│$NC"
@@ -84,7 +84,7 @@ echo "│  [INFO] Data found for username $nama"
 echo -e "$COLOR1│${NC}  [ ${green}INFO${NC} ] • Restore Data..."
 read -rp "│  Password File: " -e InputPass
 echo -e "$COLOR1│${NC}  [ ${green}INFO${NC} ] • Downloading data.."
-wget -q -O /root/backup/backup.zip "https://raw.githubusercontent.com/Rerechan02/backup/main/$nama/$nama.zip" &> /dev/null
+wget -q -O /root/backup/backup.zip "https://raw.githubusercontent.com/FanoraSsh/backup/main/$nama/$nama.zip" &> /dev/null
 echo -e "$COLOR1│${NC}  [ ${green}INFO${NC} ] • Getting your data..."
 unzip -P $InputPass /root/backup/backup.zip &> /dev/null
 echo -e "$COLOR1│${NC}  [ ${green}INFO${NC} ] • Starting to restore data..." 
