@@ -59,7 +59,7 @@ curl -sL "$gotop_link" -o /tmp/gotop.deb
 dpkg -i /tmp/gotop.deb >/dev/null 2>&1
 
 #link izin ip vps
-url_izin='https://raw.githubusercontent.com/Rerechan02/iziznscript/main/ip'
+url_izin='https://raw.githubusercontent.com/FanoraSsh/iziznscript/main/ip'
 
 # Mendapatkan IP VPS saat ini
 ip_vps=$(curl -s ifconfig.me)
@@ -194,7 +194,7 @@ mkdir -p /etc/kuhing/theme
 mkdir -p /var/lib >/dev/null 2>&1
 echo "IP=" >> /var/lib/ipvps.conf
 echo ""
-wget -q https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/FanoraSsh/Autossh/main/tools.sh;chmod +x tools.sh;./tools.sh
 mkdir -p /etc/slowdns
 rm tools.sh
 clear
@@ -211,15 +211,15 @@ echo "$pp" > /etc/xray/scdomain
 echo "IP=$pp" > /var/lib/ipvps.conf
 echo ""
 clear
-	wget -O dnstt-server "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/slowdns/dnstt-server" >/dev/null 2>&1
+	wget -O dnstt-server "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/slowdns/dnstt-server" >/dev/null 2>&1
 	chmod +x dnstt-server >/dev/null 2>&1
-	wget -O dnstt-client "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/slowdns/dnstt-client" >/dev/null 2>&1
+	wget -O dnstt-client "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/slowdns/dnstt-client" >/dev/null 2>&1
 	chmod +x dnstt-client >/dev/null 2>&1
 	./dnstt-server -gen-key -privkey-file server.key -pubkey-file server.pub
 	chmod +x *
 	mv * /etc/slowdns
-	wget -O /etc/systemd/system/client.service "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/slowdns/client" >/dev/null 2>&1
-	wget -O /etc/systemd/system/server.service "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/slowdns/server" >/dev/null 2>&1
+	wget -O /etc/systemd/system/client.service "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/slowdns/client" >/dev/null 2>&1
+	wget -O /etc/systemd/system/server.service "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/slowdns/server" >/dev/null 2>&1
 	sed -i "s/xxxx/$NS_DOMAIN/g" /etc/systemd/system/client.service 
 	sed -i "s/xxxx/$NS_DOMAIN/g" /etc/systemd/system/server.service
 #Install PELANGI/LOLCAT
@@ -235,21 +235,21 @@ echo -e "$green      Install SSH / WS               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #!/bin/bash
 cd
-wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/Rerechan02/v/main/sshws/dropbear-ws.py
-wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/Rerechan02/v/main/sshws/ws-stunnel
+wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/FanoraSsh/v/main/sshws/dropbear-ws.py
+wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/FanoraSsh/v/main/sshws/ws-stunnel
 #izin permision
 #chmod +x /usr/local/bin/ws-openssh
 chmod +x /usr/local/bin/ws-dropbear
 chmod +x /usr/local/bin/ws-stunnel
 
 #System Dropbear Websocket-SSH Python
-wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/Rerechan02/v/main/sshws/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
+wget -O /etc/systemd/system/ws-dropbear.service https://raw.githubusercontent.com/FanoraSsh/v/main/sshws/service-wsdropbear && chmod +x /etc/systemd/system/ws-dropbear.service
 
 #System SSL/TLS Websocket-SSH Python
-wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/Rerechan02/v/main/sshws/ws-stunnel.service && chmod +x /etc/systemd/system/ws-stunnel.service
+wget -O /etc/systemd/system/ws-stunnel.service https://raw.githubusercontent.com/FanoraSsh/v/main/sshws/ws-stunnel.service && chmod +x /etc/systemd/system/ws-stunnel.service
 systemctl daemon-reload
 systemctl enable ws-dropbear.service
 systemctl start ws-dropbear.service
@@ -265,9 +265,9 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 2
 clear
 cd
-wget https://raw.githubusercontent.com/Rerechan02/UDP/main/udp.sh && chmod +x udp.sh && ./udp.sh
-wget https://raw.githubusercontent.com/Rerechan02/UDP/main/zi.sh && chmod +x zi.sh && ./zi.sh
-wget https://raw.githubusercontent.com/Rerechan02/UDP/main/req.sh && chmod +x req.sh && ./req.sh
+wget https://raw.githubusercontent.com/FanoraSsh/UDP/main/udp.sh && chmod +x udp.sh && ./udp.sh
+wget https://raw.githubusercontent.com/FanoraSsh/UDP/main/zi.sh && chmod +x zi.sh && ./zi.sh
+wget https://raw.githubusercontent.com/FanoraSsh/UDP/main/req.sh && chmod +x req.sh && ./req.sh
 rm -fr zi.sh req.sh udp.sh
 clear
 
@@ -294,7 +294,7 @@ echo -e "$green       Install XRAY              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
 clear
 
 #Instal Xray
@@ -310,7 +310,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
     sed -i '$ i\/swapfile      swap swap   defaults    0 0' /etc/fstab
 clear
 cd /usr/sbin
-wget https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/funny.zip
+wget https://raw.githubusercontent.com/FanoraSsh/Autossh/main/funny.zip
 unzip funny.zip
 rm -fr funny.zip
 clear
