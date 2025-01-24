@@ -20,7 +20,7 @@ commonname=none
 email=rere@gmail.com
 
 # simple password minimal
-curl -sS https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
+curl -sS https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/password | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/pam.d/common-password
 chmod +x /etc/pam.d/common-password
 
 # go to root
@@ -179,7 +179,7 @@ END
 
 rm /usr/sbin/sslh
 cd
-wget https://raw.githubusercontent.com/Rerechan02/fn/main/sslh
+wget https://raw.githubusercontent.com/FanoraSsh/fn/main/sslh
 cp sslh /usr/sbin/sslh
 chmod +x /usr/sbin/sslh
 # Restart Service SSLH
@@ -231,7 +231,7 @@ echo "/usr/sbin/nologin" >> /etc/shells
 cat> /etc/funny/banner.conf << END
 <br>
 <font color="blue"><b>===============================</br></font><br>
-<font color="red"><b>********  Funny VPN  ********</b></font><br>
+<font color="red"><b>********  FanoraSsh VPN  ********</b></font><br>
 <font color="blue"><b>===============================</br></font><br>
 END
 /etc/init.d/dropbear restart
@@ -318,89 +318,89 @@ iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save
 netfilter-persistent reload
 
-wget https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/badvpn/setup1.sh && chmod +x * && ./setup1.sh && rm -fr setup1.sh
+wget https://raw.githubusercontent.com/FanoraSsh/Autossh/main/badvpn/setup1.sh && chmod +x * && ./setup1.sh && rm -fr setup1.sh
 # download script
 cd /usr/bin
 # menu
-wget -O bmenu "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu-bckp.sh"
-wget -O nsmenu "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/nsmenu.sh"
-wget -O pubkey "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/pubkey.sh"
-wget -O dmenu "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/dmenu.sh"
-wget -O menu "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu.sh"
-wget -O xmenu "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/xmenu.sh"
-wget -O tmenu "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/tmenu.sh"
-wget -O funny "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu.sh"
-wget -O fn "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu.sh"
-wget -O rere "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu.sh"
-wget -O rere02 "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu.sh"
-wget -O Rere02 "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu.sh"
-wget -O m-bot "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/m-bot.sh"
-wget -O m-ip "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/m-ip.sh"
-wget -O menu-trial "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu-trial.sh"
-wget -O menu-vmess "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu-vmess.sh"
-wget -O menu-vless "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu-vless.sh"
-wget -O running "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/running.sh"
-wget -O clearcache "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/clearcache.sh"
-wget -O menu-trgo "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu-trgo.sh"
-wget -O menu-trojan "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu-trojan.sh"
-wget -O menu-ssh "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu-ssh.sh"
-wget -O usernew "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/usernew.sh"
-wget -O trial "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/trial.sh"
-wget -O renew "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/renew.sh"
-wget -O hapus "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/hapus.sh"
-wget -O cek "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/cek.sh"
-wget -O member "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/member.sh"
-wget -O delete "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/delete.sh"
-wget -O autokill "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/autokill.sh"
-wget -O ceklim "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/ceklim.sh"
-wget -O tendang "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/tendang.sh"
-wget -O menu-set "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu-set.sh"
-wget -O menu-domain "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu-domain.sh"
-wget -O add-host "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/add-host.sh"
-wget -O port-change "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/port/port-change.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/certv2ray.sh"
-wget -O menu-webmin "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu-webmin.sh"
-wget -O speedtest "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/speedtest_cli.py"
-wget -O about "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/about.sh"
-wget -O auto-reboot "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/auto-reboot.sh"
-wget -O restart "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/restart.sh"
-wget -O bw "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/bw.sh"
-wget -O port-ssl "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/port/port-ssl.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/port/port-ovpn.sh"
-wget -O xp "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/xp.sh"
-wget -O acs-set "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/acs-set.sh"
-wget -O sshws "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/ssh/sshws.sh"
-wget -O status "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/status.sh"
-wget -O menu-bckp "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/menu-bckp.sh"
-wget -O backup "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/backup/backup.sh"
-wget -O restore "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/backup/restore.sh"
-wget -O jam "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/jam.sh"
-wget -O add-ws "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/add-ws.sh"
-wget -O trialvmess "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/trialvmess.sh"
-wget -O renew-ws "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/renew-ws.sh"
-wget -O del-ws "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/del-ws.sh"
-wget -O cek-ws "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/cek-ws.sh"
-wget -O add-vless "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/add-vless.sh"
-wget -O trialvless "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/trialvless.sh"
-wget -O renew-vless "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/renew-vless.sh"
-wget -O del-vless "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/del-vless.sh"
-wget -O cek-vless "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/cek-vless.sh"
-wget -O add-tr "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/add-tr.sh"
-wget -O trialtrojan "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/trialtrojan.sh"
-wget -O del-tr "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/del-tr.sh"
-wget -O renew-tr "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/renew-tr.sh"
-wget -O cek-tr "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/cek-tr.sh"
-wget -O addtrgo "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/addtrgo.sh"
-wget -O trialtrojango "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/trialtrojango.sh"
-wget -O deltrgo "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/deltrgo.sh"
-wget -O renewtrgo "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/renewtrgo.sh"
-wget -O cektrgo "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/cektrgo.sh"
+wget -O bmenu "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu-bckp.sh"
+wget -O nsmenu "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/nsmenu.sh"
+wget -O pubkey "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/pubkey.sh"
+wget -O dmenu "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/dmenu.sh"
+wget -O menu "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu.sh"
+wget -O xmenu "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/xmenu.sh"
+wget -O tmenu "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/tmenu.sh"
+wget -O funny "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu.sh"
+wget -O fn "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu.sh"
+wget -O rere "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu.sh"
+wget -O rere02 "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu.sh"
+wget -O Rere02 "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu.sh"
+wget -O m-bot "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/m-bot.sh"
+wget -O m-ip "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/m-ip.sh"
+wget -O menu-trial "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu-trial.sh"
+wget -O menu-vmess "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu-vmess.sh"
+wget -O menu-vless "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu-vless.sh"
+wget -O running "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/running.sh"
+wget -O clearcache "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/clearcache.sh"
+wget -O menu-trgo "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu-trgo.sh"
+wget -O menu-trojan "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu-trojan.sh"
+wget -O menu-ssh "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu-ssh.sh"
+wget -O usernew "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/usernew.sh"
+wget -O trial "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/trial.sh"
+wget -O renew "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/renew.sh"
+wget -O hapus "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/hapus.sh"
+wget -O cek "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/cek.sh"
+wget -O member "https://raw.githubusercontent.com/FanoraSsh/indo-ssh/main/ssh/member.sh"
+wget -O delete "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/delete.sh"
+wget -O autokill "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/autokill.sh"
+wget -O ceklim "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/ceklim.sh"
+wget -O tendang "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/tendang.sh"
+wget -O menu-set "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu-set.sh"
+wget -O menu-domain "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu-domain.sh"
+wget -O add-host "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/add-host.sh"
+wget -O port-change "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/port/port-change.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/certv2ray.sh"
+wget -O menu-webmin "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu-webmin.sh"
+wget -O speedtest "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/speedtest_cli.py"
+wget -O about "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/about.sh"
+wget -O auto-reboot "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/auto-reboot.sh"
+wget -O restart "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/restart.sh"
+wget -O bw "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/bw.sh"
+wget -O port-ssl "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/port/port-ssl.sh"
+wget -O port-ovpn "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/port/port-ovpn.sh"
+wget -O xp "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/xp.sh"
+wget -O acs-set "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/acs-set.sh"
+wget -O sshws "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/ssh/sshws.sh"
+wget -O status "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/status.sh"
+wget -O menu-bckp "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/menu-bckp.sh"
+wget -O backup "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/backup/backup.sh"
+wget -O restore "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/backup/restore.sh"
+wget -O jam "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/jam.sh"
+wget -O add-ws "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/add-ws.sh"
+wget -O trialvmess "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/trialvmess.sh"
+wget -O renew-ws "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/renew-ws.sh"
+wget -O del-ws "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/del-ws.sh"
+wget -O cek-ws "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/cek-ws.sh"
+wget -O add-vless "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/add-vless.sh"
+wget -O trialvless "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/trialvless.sh"
+wget -O renew-vless "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/renew-vless.sh"
+wget -O del-vless "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/del-vless.sh"
+wget -O cek-vless "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/cek-vless.sh"
+wget -O add-tr "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/add-tr.sh"
+wget -O trialtrojan "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/trialtrojan.sh"
+wget -O del-tr "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/del-tr.sh"
+wget -O renew-tr "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/renew-tr.sh"
+wget -O cek-tr "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/cek-tr.sh"
+wget -O addtrgo "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/addtrgo.sh"
+wget -O trialtrojango "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/trialtrojango.sh"
+wget -O deltrgo "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/deltrgo.sh"
+wget -O renewtrgo "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/renewtrgo.sh"
+wget -O cektrgo "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/cektrgo.sh"
 # shadowsocks
-wget -O add-ssws "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/add-ssws.sh" && chmod +x add-ssws
-wget -O trialssws "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/trialssws.sh" && chmod +x trialssws
-wget -O del-ssws "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/del-ssws.sh" && chmod +x del-ssws
-wget -O renew-ssws "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/xray/renew-ssws.sh" && chmod +x renew-ssws
-wget -O m-ssws "https://raw.githubusercontent.com/Rerechan02/indo-ssh/main/menu/m-ssws.sh"
+wget -O add-ssws "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/add-ssws.sh" && chmod +x add-ssws
+wget -O trialssws "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/trialssws.sh" && chmod +x trialssws
+wget -O del-ssws "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/del-ssws.sh" && chmod +x del-ssws
+wget -O renew-ssws "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/xray/renew-ssws.sh" && chmod +x renew-ssws
+wget -O m-ssws "https://raw.githubusercontent.com/FanoraSsh/Autossh/main/menu/m-ssws.sh"
 chmod +x *
 chmod +x menu
 chmod +x m-bot
