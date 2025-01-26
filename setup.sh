@@ -59,7 +59,7 @@ curl -sL "$gotop_link" -o /tmp/gotop.deb
 dpkg -i /tmp/gotop.deb >/dev/null 2>&1
 
 #link izin ip vps
-url_izin='https://raw.githubusercontent.com/FanoraSsh/iziznscript/main/ip'
+url_izin='https://raw.githubusercontent.com/FanoraSsh/izinvps/main/ip'
 
 # Mendapatkan IP VPS saat ini
 ip_vps=$(curl -s ifconfig.me)
