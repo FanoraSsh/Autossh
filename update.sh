@@ -1,5 +1,5 @@
 #!/bin/bash
-repo="https://raw.githubusercontent.com/FanoraSsh/autoscriptssh/main/"
+repo="https://raw.githubusercontent.com/FanoraSsh/Autossh/main/"
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ###########- COLOR CODE -##############
